@@ -3,6 +3,7 @@ package edu.matc.kvang.controller;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
 
 import javax.servlet.ServletException;
@@ -66,6 +67,9 @@ public class DoChart extends HttpServlet {
                 //true,        // tooltips
                 //false           // URL
         );
+
+        PiePlot piePlot = new PiePlot();
+        piePlot.setSimpleLabels(true);
 
         //chart.setBorderVisible(false);
 

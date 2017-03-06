@@ -1,6 +1,6 @@
 <%@ include file="taglib.jsp"%>
 <c:set var="title" value="Pie Chart" />
-<%@include file="head.jsp"%>
+<%@ include file="head.jsp"%>
 
 <html>
     <body>
