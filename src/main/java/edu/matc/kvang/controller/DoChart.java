@@ -61,10 +61,10 @@ public class DoChart extends HttpServlet {
 
         JFreeChart chart = ChartFactory.createPieChart(
                 "Expenses",     // Title
-                dataset,             // data
-                true,         // legend
-                true,        // tooltips
-                false           // URL
+                dataset             // data
+                //true,         // legend
+                //true,        // tooltips
+                //false           // URL
         );
 
         //chart.setBorderVisible(false);
