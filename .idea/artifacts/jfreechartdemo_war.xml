@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jfreechartdemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="jfreechartdemo.war">
+      <element id="artifact" artifact-name="jfreechartdemo:war exploded" />
+    </root>
+  </artifact>
+</component>

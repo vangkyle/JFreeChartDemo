@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jfreechartdemo:war exploded">
+    <output-path>$PROJECT_DIR$/target/jfreechartdemo</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jfreechartdemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.0.19" />
+          <element id="library" level="project" name="Maven: org.jfree:jcommon:1.0.24" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/jfreechartdemo/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="jfreechartdemo/web/Web" />
+    </root>
+  </artifact>
+</component>
