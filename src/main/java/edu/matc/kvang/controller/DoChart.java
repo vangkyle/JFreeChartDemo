@@ -3,7 +3,6 @@ package edu.matc.kvang.controller;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
 
 import javax.servlet.ServletException;
@@ -11,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -43,6 +43,7 @@ public class DoChart extends HttpServlet {
         int width = 500;
         int height = 350;
 
+        File pieChart = new File("pieChart.png");
         ChartUtilities.writeChartAsPNG(outputStream, chart, width, height);
     }
 
@@ -62,14 +63,14 @@ public class DoChart extends HttpServlet {
 
         JFreeChart chart = ChartFactory.createPieChart(
                 "Expenses",     // Title
-                dataset             // data
-                //true,         // legend
-                //true,        // tooltips
-                //false           // URL
+                dataset,             // data
+                true,         // legend
+                true,        // tooltips
+                false           // URL
         );
 
-        PiePlot piePlot = new PiePlot();
-        piePlot.setSimpleLabels(true);
+        //PiePlot piePlot = new PiePlot();
+        //piePlot.setSimpleLabels(true);
 
         //chart.setBorderVisible(false);
 
