@@ -6,5 +6,5 @@ Created pie and bar chart saved as png image file.
 * Webapp -- index.jsp -- Create div element and pull image using img src
 
 ## Chart Image
-[Pie Chart Image](/ChartImage/DoChart.png)
-[Bar Chart Image](/ChartImage/barchart.png)
+* [Pie Chart Image](/ChartImage/DoChart.png)
+* [Bar Chart Image](/ChartImage/barchart.png)
