@@ -7,3 +7,4 @@ Created pie and bar chart saved as png image file.
 
 ## Chart Image
 [Pie Chart Image](/ChartImage/DoChart.png)
+[Bar Chart Image](/ChartImage/barchart.png)
