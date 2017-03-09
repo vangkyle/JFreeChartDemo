@@ -45,22 +45,22 @@ public class BarChart extends HttpServlet {
         final String household = "Household";
         final String creditcard = "Credit cards";
         final String pay = "Pay Check";
-        final DefaultCategoryDataset barDataset = new DefaultCategoryDataset();
 
+        DefaultCategoryDataset barDataset = new DefaultCategoryDataset();
         barDataset.addValue(75.00, expense, childcare);
         barDataset.addValue(50.00, expense, household);
         barDataset.addValue(100.00, expense, creditcard);
         barDataset.addValue(350.00, income, pay);
 
         JFreeChart barChart = ChartFactory.createBarChart(
-                "Finance Tracker",
-                "Category",
-                "Amount",
+                "Finance Tracker",       //title
+                "Category",   // category axis label
+                "Amount",       // value axis label
                 barDataset,
                 PlotOrientation.VERTICAL,
-                true,
-                true,
-                false
+                true,      //Legend
+                false,    //Tooltips
+                false        //Urls
         );
         return barChart;
     }

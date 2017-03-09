@@ -65,14 +65,12 @@ public class DoChart extends HttpServlet {
                 "Expenses",     // Title
                 dataset,             // data
                 true,         // legend
-                true,        // tooltips
+                false,        // tooltips
                 false           // URL
         );
 
         //PiePlot piePlot = new PiePlot();
         //piePlot.setSimpleLabels(true);
-
-        //chart.setBorderVisible(false);
 
         return chart;
     }
